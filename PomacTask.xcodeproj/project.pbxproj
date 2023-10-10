@@ -9,21 +9,35 @@
 /* Begin PBXBuildFile section */
 		0C9018DA2AD4671900AAE805 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9018D92AD4671900AAE805 /* AppDelegate.swift */; };
 		0C9018DC2AD4671900AAE805 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9018DB2AD4671900AAE805 /* SceneDelegate.swift */; };
-		0C9018DE2AD4671900AAE805 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9018DD2AD4671900AAE805 /* ViewController.swift */; };
+		0C9018DE2AD4671900AAE805 /* ReposListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9018DD2AD4671900AAE805 /* ReposListVC.swift */; };
 		0C9018E12AD4671900AAE805 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C9018DF2AD4671900AAE805 /* Main.storyboard */; };
 		0C9018E32AD4671A00AAE805 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C9018E22AD4671A00AAE805 /* Assets.xcassets */; };
 		0C9018E62AD4671A00AAE805 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C9018E42AD4671A00AAE805 /* LaunchScreen.storyboard */; };
+		0C9018F82AD4733400AAE805 /* RepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9018F62AD4733400AAE805 /* RepoCell.swift */; };
+		0C9018F92AD4733400AAE805 /* RepoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C9018F72AD4733400AAE805 /* RepoCell.xib */; };
+		0C9018FB2AD474B400AAE805 /* RepoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9018FA2AD474B400AAE805 /* RepoModel.swift */; };
+		0C9018FD2AD4756300AAE805 /* OwnerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9018FC2AD4756300AAE805 /* OwnerModel.swift */; };
+		0C9019002AD4762000AAE805 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0C9018FF2AD4762000AAE805 /* Alamofire */; };
+		0CE5233F2AD5D7BF0031A2A7 /* ReposListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE5233E2AD5D7BF0031A2A7 /* ReposListViewModel.swift */; };
+		0CE523412AD5D81E0031A2A7 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE523402AD5D81E0031A2A7 /* Observable.swift */; };
+		0CE523462AD5ED1C0031A2A7 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 0CE523452AD5ED1C0031A2A7 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0C9018D62AD4671900AAE805 /* PomacTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PomacTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C9018D92AD4671900AAE805 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C9018DB2AD4671900AAE805 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0C9018DD2AD4671900AAE805 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0C9018DD2AD4671900AAE805 /* ReposListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposListVC.swift; sourceTree = "<group>"; };
 		0C9018E02AD4671900AAE805 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0C9018E22AD4671A00AAE805 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C9018E52AD4671A00AAE805 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C9018E72AD4671A00AAE805 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C9018F62AD4733400AAE805 /* RepoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoCell.swift; sourceTree = "<group>"; };
+		0C9018F72AD4733400AAE805 /* RepoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepoCell.xib; sourceTree = "<group>"; };
+		0C9018FA2AD474B400AAE805 /* RepoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoModel.swift; sourceTree = "<group>"; };
+		0C9018FC2AD4756300AAE805 /* OwnerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerModel.swift; sourceTree = "<group>"; };
+		0CE5233E2AD5D7BF0031A2A7 /* ReposListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposListViewModel.swift; sourceTree = "<group>"; };
+		0CE523402AD5D81E0031A2A7 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +45,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CE523462AD5ED1C0031A2A7 /* Kingfisher in Frameworks */,
+				0C9019002AD4762000AAE805 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +72,93 @@
 		0C9018D82AD4671900AAE805 /* PomacTask */ = {
 			isa = PBXGroup;
 			children = (
+				0C9018F12AD46C4700AAE805 /* Modules */,
+				0CE523492AD60DED0031A2A7 /* Helper */,
+				0CE523362AD5C4F90031A2A7 /* Resources */,
 				0C9018D92AD4671900AAE805 /* AppDelegate.swift */,
 				0C9018DB2AD4671900AAE805 /* SceneDelegate.swift */,
-				0C9018DD2AD4671900AAE805 /* ViewController.swift */,
-				0C9018DF2AD4671900AAE805 /* Main.storyboard */,
-				0C9018E22AD4671A00AAE805 /* Assets.xcassets */,
-				0C9018E42AD4671A00AAE805 /* LaunchScreen.storyboard */,
 				0C9018E72AD4671A00AAE805 /* Info.plist */,
 			);
 			path = PomacTask;
+			sourceTree = "<group>";
+		};
+		0C9018F12AD46C4700AAE805 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				0C9150C22AD5C412000BD739 /* Repos List */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		0C9019012AD4773000AAE805 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0C9018FA2AD474B400AAE805 /* RepoModel.swift */,
+				0C9018FC2AD4756300AAE805 /* OwnerModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0C9019022AD4774300AAE805 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0CE523472AD60C370031A2A7 /* VC */,
+				0CE523482AD60C460031A2A7 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0C9150C22AD5C412000BD739 /* Repos List */ = {
+			isa = PBXGroup;
+			children = (
+				0C9019012AD4773000AAE805 /* Model */,
+				0C9019022AD4774300AAE805 /* View */,
+				0C9150C32AD5C42A000BD739 /* ViewModel */,
+			);
+			path = "Repos List";
+			sourceTree = "<group>";
+		};
+		0C9150C32AD5C42A000BD739 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0CE5233E2AD5D7BF0031A2A7 /* ReposListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0CE523362AD5C4F90031A2A7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0C9018E42AD4671A00AAE805 /* LaunchScreen.storyboard */,
+				0C9018E22AD4671A00AAE805 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0CE523472AD60C370031A2A7 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				0C9018DF2AD4671900AAE805 /* Main.storyboard */,
+				0C9018DD2AD4671900AAE805 /* ReposListVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		0CE523482AD60C460031A2A7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0C9018F62AD4733400AAE805 /* RepoCell.swift */,
+				0C9018F72AD4733400AAE805 /* RepoCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		0CE523492AD60DED0031A2A7 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				0CE523402AD5D81E0031A2A7 /* Observable.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +177,10 @@
 			dependencies = (
 			);
 			name = PomacTask;
+			packageProductDependencies = (
+				0C9018FF2AD4762000AAE805 /* Alamofire */,
+				0CE523452AD5ED1C0031A2A7 /* Kingfisher */,
+			);
 			productName = PomacTask;
 			productReference = 0C9018D62AD4671900AAE805 /* PomacTask.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +209,10 @@
 				Base,
 			);
 			mainGroup = 0C9018CD2AD4671900AAE805;
+			packageReferences = (
+				0C9018FE2AD4762000AAE805 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				0CE523442AD5ED1C0031A2A7 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 0C9018D72AD4671900AAE805 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,6 +230,7 @@
 				0C9018E62AD4671A00AAE805 /* LaunchScreen.storyboard in Resources */,
 				0C9018E32AD4671A00AAE805 /* Assets.xcassets in Resources */,
 				0C9018E12AD4671900AAE805 /* Main.storyboard in Resources */,
+				0C9018F92AD4733400AAE805 /* RepoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +241,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C9018DE2AD4671900AAE805 /* ViewController.swift in Sources */,
+				0CE523412AD5D81E0031A2A7 /* Observable.swift in Sources */,
+				0CE5233F2AD5D7BF0031A2A7 /* ReposListViewModel.swift in Sources */,
+				0C9018DE2AD4671900AAE805 /* ReposListVC.swift in Sources */,
 				0C9018DA2AD4671900AAE805 /* AppDelegate.swift in Sources */,
 				0C9018DC2AD4671900AAE805 /* SceneDelegate.swift in Sources */,
+				0C9018FD2AD4756300AAE805 /* OwnerModel.swift in Sources */,
+				0C9018FB2AD474B400AAE805 /* RepoModel.swift in Sources */,
+				0C9018F82AD4733400AAE805 /* RepoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +464,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0C9018FE2AD4762000AAE805 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		0CE523442AD5ED1C0031A2A7 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0C9018FF2AD4762000AAE805 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0C9018FE2AD4762000AAE805 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		0CE523452AD5ED1C0031A2A7 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0CE523442AD5ED1C0031A2A7 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0C9018CE2AD4671900AAE805 /* Project object */;
 }
