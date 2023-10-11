@@ -14,15 +14,22 @@ class RepoCell: UITableViewCell {
     @IBOutlet var ownerNameLbl: UILabel!
     @IBOutlet var createdAtLbl: UILabel!
     @IBOutlet var repoImageView: UIImageView!
-    
-    
-    @IBOutlet var backgroundCellView: UIView!
+    @IBOutlet var contentBackgroundView: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        setUpView()
+      
+    }
+    
+    func setUpView(){
+        //add corners
         repoImageView.layer.cornerRadius = 16
-        // Initialization code
+        contentBackgroundView.layer.cornerRadius = 16
+        
+        //add shadow
+        contentBackgroundView.addShadow()
     }
 
   

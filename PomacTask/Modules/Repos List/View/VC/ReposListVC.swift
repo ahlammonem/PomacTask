@@ -18,7 +18,7 @@ class ReposListVC: UIViewController {
    var viewModel : ReposListViewModel!
    var reposList : [RepoModel] = []
    var createdat = ""
-   var createdAtDate = "2007-08-20T05:24:19Z"
+   var createdAtDate = "2023-10-11T15:16:19Z"
     
     //MARK: - Pagination vars
     var reposPerPages = 10
@@ -52,7 +52,7 @@ class ReposListVC: UIViewController {
                 self.paginationReposList.append(repos[i])
             }
             self.reposTablViewOutlete.reloadData()
-
+            
         }
         
         //Get isloading value
@@ -72,20 +72,21 @@ class ReposListVC: UIViewController {
             print(error)
         }
         
-        viewModel.monthsDiff.bind { [self] months in
-            guard let months = months else {return}
-            if months < 6 {
-                self.createdat =  "\(months) Months ago "
-            }
-            else {
+        viewModel.dateDiff.bind { [self] dateDiff in
+            guard let dateDiff = dateDiff else {
+                
                 viewModel.convertDateFormat(date: self.createdAtDate)
                 viewModel.convertedDate.bind { date in
                     guard let date = date else {return}
                     self.createdat =  date
+                    return
                 }
+                return
             }
+            self.createdat = dateDiff
+            
+            
         }
-        
     }
     
     func setPaginationRepos(reposPerPage : Int){

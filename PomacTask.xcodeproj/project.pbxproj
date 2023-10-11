@@ -18,6 +18,8 @@
 		0C9018FB2AD474B400AAE805 /* RepoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9018FA2AD474B400AAE805 /* RepoModel.swift */; };
 		0C9018FD2AD4756300AAE805 /* OwnerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9018FC2AD4756300AAE805 /* OwnerModel.swift */; };
 		0C9019002AD4762000AAE805 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0C9018FF2AD4762000AAE805 /* Alamofire */; };
+		0CC9D14B2AD712B900B4DA88 /* UIView + shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC9D14A2AD712B900B4DA88 /* UIView + shadow.swift */; };
+		0CC9D14D2AD7135900B4DA88 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC9D14C2AD7135900B4DA88 /* Constants.swift */; };
 		0CE5233F2AD5D7BF0031A2A7 /* ReposListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE5233E2AD5D7BF0031A2A7 /* ReposListViewModel.swift */; };
 		0CE523412AD5D81E0031A2A7 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE523402AD5D81E0031A2A7 /* Observable.swift */; };
 		0CE523462AD5ED1C0031A2A7 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 0CE523452AD5ED1C0031A2A7 /* Kingfisher */; };
@@ -36,6 +38,8 @@
 		0C9018F72AD4733400AAE805 /* RepoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepoCell.xib; sourceTree = "<group>"; };
 		0C9018FA2AD474B400AAE805 /* RepoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoModel.swift; sourceTree = "<group>"; };
 		0C9018FC2AD4756300AAE805 /* OwnerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerModel.swift; sourceTree = "<group>"; };
+		0CC9D14A2AD712B900B4DA88 /* UIView + shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + shadow.swift"; sourceTree = "<group>"; };
+		0CC9D14C2AD7135900B4DA88 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0CE5233E2AD5D7BF0031A2A7 /* ReposListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposListViewModel.swift; sourceTree = "<group>"; };
 		0CE523402AD5D81E0031A2A7 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,12 +76,10 @@
 		0C9018D82AD4671900AAE805 /* PomacTask */ = {
 			isa = PBXGroup;
 			children = (
+				0CC9D1492AD70D8E00B4DA88 /* App Layer */,
 				0C9018F12AD46C4700AAE805 /* Modules */,
 				0CE523492AD60DED0031A2A7 /* Helper */,
 				0CE523362AD5C4F90031A2A7 /* Resources */,
-				0C9018D92AD4671900AAE805 /* AppDelegate.swift */,
-				0C9018DB2AD4671900AAE805 /* SceneDelegate.swift */,
-				0C9018E72AD4671A00AAE805 /* Info.plist */,
 			);
 			path = PomacTask;
 			sourceTree = "<group>";
@@ -126,11 +128,29 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		0CC9D1492AD70D8E00B4DA88 /* App Layer */ = {
+			isa = PBXGroup;
+			children = (
+				0C9018DB2AD4671900AAE805 /* SceneDelegate.swift */,
+				0C9018D92AD4671900AAE805 /* AppDelegate.swift */,
+			);
+			path = "App Layer";
+			sourceTree = "<group>";
+		};
+		0CC9D14E2AD7140600B4DA88 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0CC9D14A2AD712B900B4DA88 /* UIView + shadow.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		0CE523362AD5C4F90031A2A7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				0C9018E42AD4671A00AAE805 /* LaunchScreen.storyboard */,
+				0C9018E72AD4671A00AAE805 /* Info.plist */,
 				0C9018E22AD4671A00AAE805 /* Assets.xcassets */,
+				0C9018E42AD4671A00AAE805 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -156,6 +176,8 @@
 		0CE523492AD60DED0031A2A7 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				0CC9D14E2AD7140600B4DA88 /* Extensions */,
+				0CC9D14C2AD7135900B4DA88 /* Constants.swift */,
 				0CE523402AD5D81E0031A2A7 /* Observable.swift */,
 			);
 			path = Helper;
@@ -242,12 +264,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CE523412AD5D81E0031A2A7 /* Observable.swift in Sources */,
+				0CC9D14B2AD712B900B4DA88 /* UIView + shadow.swift in Sources */,
 				0CE5233F2AD5D7BF0031A2A7 /* ReposListViewModel.swift in Sources */,
 				0C9018DE2AD4671900AAE805 /* ReposListVC.swift in Sources */,
 				0C9018DA2AD4671900AAE805 /* AppDelegate.swift in Sources */,
 				0C9018DC2AD4671900AAE805 /* SceneDelegate.swift in Sources */,
 				0C9018FD2AD4756300AAE805 /* OwnerModel.swift in Sources */,
 				0C9018FB2AD474B400AAE805 /* RepoModel.swift in Sources */,
+				0CC9D14D2AD7135900B4DA88 /* Constants.swift in Sources */,
 				0C9018F82AD4733400AAE805 /* RepoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,7 +420,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PomacTask/Info.plist;
+				INFOPLIST_FILE = PomacTask/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -423,7 +447,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PomacTask/Info.plist;
+				INFOPLIST_FILE = PomacTask/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
