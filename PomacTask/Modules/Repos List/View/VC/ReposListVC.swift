@@ -18,7 +18,7 @@ class ReposListVC: UIViewController {
    var viewModel : ReposListViewModel!
    var reposList : [RepoModel] = []
    var createdat = ""
-   var createdAtDate = "2023-10-11T15:16:19Z"
+   var createdAtDate = "2020-09-11T15:16:19Z"
     
     //MARK: - Pagination vars
     var reposPerPages = 10
